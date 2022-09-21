@@ -4,7 +4,7 @@
             {{ .Title }}
         </h2>
         <p>{{ .Description }}</p>
-		<a href="https://api.whatsapp.com/send?text=Hi%2c%20I%20am%20interested%20in%20your%20{{ urlquery .Title }}.%20I%27d%20like%20to%20reserve%20today.%20I%20%saw%20your%20services%20page%3a%0a%0a{{.Permalink | safeURL | absURL }}&phone={{ .Params.Phone }}"
+		<a href="https://api.whatsapp.com/send?text=Hi%2c%20I%20am%20interested%20in%20your%20{{ urlquery .Title }}.%20I%27d%20like%20to%20reserve%20today.%20I%20saw%20your%20services%20page%3a%0a%0a{{.Permalink | absURL }}&phone={{ .Params.Phone }}"
         class="bg-tlgray-700 hover:opacity-80 hover:text-white relative block focus:outline-none text-md text-center">
         Reserve your {{ .Title }}
     </a>
