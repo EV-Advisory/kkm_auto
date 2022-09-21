@@ -1,0 +1,9 @@
+/* 
+ This CSS file is used to override the existing styles of the theme.
+ You can change the article headings, fonts, colors, etc.
+*/
+
+body > header > nav > a > img {
+	width:20%;
+	height:auto;
+}
