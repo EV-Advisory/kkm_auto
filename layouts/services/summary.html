@@ -4,9 +4,9 @@
             {{ .Title }}
         </h2>
         <p>{{ .Description }}</p>
-		<a href="https://api.whatsapp.com/send?text=Hi%2c%20I%20am%20interested%20in%3a%0a%0ahttps%3a%2f%2fstudiorisha.com%2fproducts%2f035_all_beauty%2findex.html&phone=16479817466"
+		<a href="https://api.whatsapp.com/send?text=Hi%2c%20I%20am%20interested%20in%20%your%20{{ urlquery .Title }}%3a%0a%0a{{.Permalink | safeURL }}&phone={{ .Params.Phone }}"
         class="bg-tlgray-700 hover:opacity-80 hover:text-white relative block focus:outline-none text-md text-center">
-        All Services >
+        Reserve your {{ .Title }}
     </a>
     </div>
 </a>
