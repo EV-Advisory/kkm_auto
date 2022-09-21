@@ -1,0 +1,9 @@
+*.html 
+.Rproj.user/
+.Rhistory
+logs
+**/archive/**
+node_modules/**
+resources/**
+package-lock.json
+.hugo_build.lock
