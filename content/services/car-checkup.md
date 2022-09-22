@@ -3,7 +3,8 @@ title: "Car Checkup"
 date: 2020-06-23T12:33:45+10:00
 draft: false
 featured: true
-weight: 1
+weight: 2
+icon: <i class="fa-solid fa-gear"></i>
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan dapibus purus, vel maximus erat facilisis vel.
 phone: 16479817466
 ---
