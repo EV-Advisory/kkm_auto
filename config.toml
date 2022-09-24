@@ -1,6 +1,6 @@
 baseURL = ""
 title = "Tella"
-author = "username"
+author = "EV Advisory"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -28,7 +28,7 @@ enableRobotsTXT = true
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
-    size = "h-0.5"
+    size = "h-2"
 
   [params.site]
     name = "KKM Autoshop"
@@ -77,5 +77,5 @@ enableRobotsTXT = true
   [[menu.footer]]
     name = "Github"
     url = "https://github.com/opera7133/tella"
-    pre = "<i class='icon-github text-2xl'></i>"
+    pre = "<i class='fa-solid fa-car-side text-2x1'></i>"
       weight = 2
