@@ -1,20 +1,31 @@
 [
   {
+    "title": "Wheel Alignment",
+    "description": "What up, we do oil changes here",
+    "icon": "<i class='fa-solid fa-tire fa-2xl'></i>",
+    "link": "/services/oil-change"
+  },{
     "title": "Oil Change",
     "description": "What up, we do oil changes here",
-    "icon": "icon-desktop_windows",
+    "icon": "<i class='fa-solid fa-car-side fa-2xl'></i>",
     "link": "/services/oil-change"
   },
   {
     "title": "Tire Change",
     "description": "Your tires toast? We install a fresh set on for you same day",
-    "icon": "icon-github",
+    "icon": "<i class='fa-solid fa-car-side fa-2xl'></i>",
     "link": "/services/tire-change"
   },
   {
     "title": "Car Checkup",
     "description": "Leave the check up off for too long and no bueno ",
-    "icon": "icon-github",
+    "icon": "<i class='fa-solid fa-car-battery fa-2xl'></i>",
     "link": "/services/car-checkup"
+  },
+  {
+    "title": "Breakdown Services",
+    "description": "Leave the check up off for too long and no bueno ",
+    "icon": "<i class='fa-solid fa-car-burst fa-2xl'></i>",
+    "link": "/services/breakdown-services"
   }
 ]
