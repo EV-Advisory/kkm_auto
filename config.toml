@@ -1,5 +1,5 @@
 baseURL = ""
-title = "Tella"
+title = "KKM Autoshop"
 author = "EV Advisory"
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -24,7 +24,7 @@ enableRobotsTXT = true
 
   [params.logo]
     main = "img/logo/kkm_logo_rsz2.svg"
-    alt = "Tella Logo"
+    alt = "KKM Autoshop Logo"
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
@@ -79,3 +79,8 @@ enableRobotsTXT = true
     url = "https://github.com/opera7133/tella"
     pre = "<i class='fa-solid fa-car-side text-2x1'></i>"
       weight = 2
+  [[menu.footer]]
+    name = "Github"
+    url = "https://github.com/opera7133/tella"
+    pre = "<i class='fa-solid fa-car-side text-2x1'></i>"
+      weight = 3

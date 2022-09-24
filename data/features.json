@@ -1,30 +1,30 @@
 [
   {
     "title": "Wheel Alignment",
-    "description": "What up, we do oil changes here",
-    "icon": "<i class='fa-solid fa-tire fa-2xl'></i>",
-    "link": "/services/oil-change"
+    "description": "Starting from $70",
+    "icon": "<i class='fa-solid fa-gears fa-2xl'></i>",
+    "link": "/services/wheel-alignment"
   },{
     "title": "Oil Change",
-    "description": "What up, we do oil changes here",
+    "description": "Starting from $40",
     "icon": "<i class='fa-solid fa-car-side fa-2xl'></i>",
     "link": "/services/oil-change"
   },
   {
     "title": "Tire Change",
-    "description": "Your tires toast? We install a fresh set on for you same day",
+    "description": "Starting from $40",
     "icon": "<i class='fa-solid fa-car-side fa-2xl'></i>",
     "link": "/services/tire-change"
   },
   {
     "title": "Car Checkup",
-    "description": "Leave the check up off for too long and no bueno ",
+    "description": "Starting from $50",
     "icon": "<i class='fa-solid fa-car-battery fa-2xl'></i>",
     "link": "/services/car-checkup"
   },
   {
     "title": "Breakdown Services",
-    "description": "Leave the check up off for too long and no bueno ",
+    "description": "Starting from $80",
     "icon": "<i class='fa-solid fa-car-burst fa-2xl'></i>",
     "link": "/services/breakdown-services"
   }
