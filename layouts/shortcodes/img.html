@@ -1,8 +1,10 @@
 {{ $name := .Get "src" }}
 {{ $extention := .Get "ext" | default "jpg" }}
 {{ $alt := .Get "alt" }}
+{{ $class := .Get "class" | default "justify-center" }}
 {{ $width := .Get "width" | default "auto" }}
-{{ $minipath := printf "/posts/%s/%s.%s" .Page.File.ContentBaseName $name $extention }}
+{{ $height := .Get "height" | default "500px" }}
+{{ $minipath := printf "/%s"  $name }}
 {{ $path := printf "content%s.webp" $minipath }}
 {{- if (fileExists $path) -}}
 <picture>
@@ -10,5 +12,5 @@
     <img src="{{ $minipath }}" />
 </picture>
 {{- else -}}
-<img src="{{ $minipath }}" />
+<img class = "{{ $class }}" src="{{ $minipath }}" style = "display: block; margin-left: auto; margin-right: auto;" width = "{{$width}}" height = "{{$height}}"/>
 {{- end -}}
