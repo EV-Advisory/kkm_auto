@@ -36,6 +36,33 @@
   <div class="mx-3 col-span-3 lg:col-span-2 px-2">
     <h1 class="title text-5xl mb-4">{{.Title}}</h1>
     <div class="content prose md:prose-lg lg:prose-xl max-w-none py-1">{{.Content}}</div>
+	{{ if .Params.Phone }}
+	<hr>
+		<h3  class="text-2xl ml-2">Reserve your {{ .Title }}</h3>
+	<div class="justify-center text-gray-300 my-5 flex flex-wrap ">
+		<a href="https://api.whatsapp.com/send?text=Hi%2c%20I%20am%20interested%20in%20your%20{{ urlquery .Title }}.%20I%27d%20like%20to%20reserve%20today.%20I%20saw%20your%20services%20page%3a%0a%0a{{.Permalink | absURL }}&phone={{ .Params.Phone }}"
+        class="duration-200 px-6 py-3 bg-tlgray-800 hover:opacity-80 hover:text-white focus:outline-none text-md text-center">
+        Whatsapp 
+		<i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </a>
+	|
+	<a href="sms:+{{ .Params.Phone }}?&body=Hi%2c%20I%20am%20interested%20in%20your%20{{ urlquery .Title }}.%20I%27d%20like%20to%20reserve%20today.%20I%020saw%20your%20services%20page%3a%0a%0a{{.Permalink | absURL }}" 
+	class="duration-200 px-6 py-3 bg-tlgray-800 hover:opacity-80 hover:text-white text-md text-center">
+        Text
+		<i class="fa-solid fa-message fa-2xl"></i>
+    </a>
+	|
+	
+	<a href="callto:+{{ .Params.Phone }}" class="duration-200 px-6 py-3 bg-tlgray-800 hover:opacity-80 hover:text-white focus:outline-none text-md text-center">
+        Call
+		<i class="fa-solid fa-phone fa-2xl"></i>
+    </a>
+    </div>
+	{{ end }}
+        <h2 class="text-4xl ml-2">Where to find us</h2>
+        {{- partial "feature-map.html" . -}}
+
   </div>
+  
 </div>
 {{ end }}
