@@ -4,7 +4,8 @@
             {{ .Title }}
         </h2>
 </a>
-		{{if .Params.icon }} {{.Params.icon  | safeHTML }}
+		{{if .Params.icon }} 
+		{{.Params.icon  | safeHTML }}
         {{ end }}
         <p>{{ .Description }}</p>
 		<div class="justify-center text-gray-300 my-5">
