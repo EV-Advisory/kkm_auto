@@ -1,0 +1,16 @@
+{{ $name := .Get "src" }}
+{{ $extention := .Get "ext" | default "jpg" }}
+{{ $alt := .Get "alt" }}
+{{ $class := .Get "class" | default "justify-center" }}
+{{ $width := .Get "width" | default "auto" }}
+{{ $height := .Get "height" | default "500px" }}
+{{ $minipath := printf "/%s"  $name }}
+{{ $path := printf "content%s.webp" $minipath }}
+{{- if (fileExists $path) -}}
+<picture>
+    <source type="image/webp" srcset="{{ $minipath }}.webp">
+    <img src="{{ $minipath }}" />
+</picture>
+{{- else -}}
+<img class = "{{ $class }}" src="{{ $minipath }}" style = "display: block; margin-left: auto; margin-right: auto;" width = "{{$width}}" height = "{{$height}}"/>
+{{- end -}}

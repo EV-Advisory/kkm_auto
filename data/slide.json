@@ -1,10 +1,14 @@
 [
   {
-    "title": "Tella, A Hugo theme for Companies.",
-    "image": "img/slide/slide01.jpg"
+    "title": "KKM Automotive\n- Local\n- Family-Owned\n- Fair",
+    "image": "img/slide/car01.webp"
   },
   {
-    "title": "Sample text here...",
-    "image": "img/slide/slide02.jpg"
+    "title": "Book your appointment today",
+    "image": "img/slide/man-5638082.webp"
+  },
+  {
+    "title": "Servicing all automotive makes and models",
+    "image": "img/slide/jeep-4640909.webp"
   }
 ]

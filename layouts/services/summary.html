@@ -1,0 +1,24 @@
+    <div class="summary border p-3">
+<a href="{{ .Permalink }}">
+        <h2 class="text-3xl">
+            {{ .Title }}
+        </h2>
+</a>
+		{{if .Params.icon }} 
+		{{.Params.icon  | safeHTML }}
+        {{ end }}
+        <p>{{ .Description }}</p>
+		<div class="justify-center text-gray-300 my-5">
+		Reserve on 
+		<a href="https://api.whatsapp.com/send?text=Hi%2c%20I%20am%20interested%20in%20your%20{{ urlquery .Title }}.%20I%27d%20like%20to%20reserve%20today.%20I%20saw%20your%20services%20page%3a%0a%0a{{.Permalink | absURL }}&phone={{ .Params.Phone }}"
+        class="duration-200 px-6 py-3 bg-tlgray-800 hover:opacity-80 hover:text-white focus:outline-none text-md text-center">
+        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </a>
+	|
+	<a href="sms:+{{ .Params.Phone }}?&body=Hi%2c%20I%20am%20interested%20in%20your%20{{ urlquery .Title }}.%20I%27d%20like%20to%20reserve%20today.%20I%020saw%20your%20services%20page%3a%0a%0a{{.Permalink | absURL }}" 
+	class="duration-200 px-6 py-3 bg-tlgray-800 hover:opacity-80 hover:text-white text-md text-center">
+        <i class="fa-solid fa-message fa-2xl"></i>
+    </a>
+	
+    </div>
+    </div>
