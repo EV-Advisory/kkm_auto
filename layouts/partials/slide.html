@@ -4,7 +4,7 @@
         <div class="swiper-slide">
 		<picture>
 		<source type="image/webp" srcset="{{ .image }}" />
-            <img src="{{ .image }}" sizes = "width:100%; height:auto;" alt="{{ .title }}">
+            <img src="{{ .image }}" sizes = "(min-width: 400px) 80vw, 100vw" alt="{{ .title }}">
             <div class="s-fade-txt">
                 <h1 class="text-4xl text-white">{{ .title | markdownify | emojify }}</h1>
             </div>
