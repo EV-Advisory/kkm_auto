@@ -42,7 +42,7 @@ googleAnalytics = "G-QHZQHJVYE5"
     meta_og_title = "KKM Auto"
     meta_og_type = "website"
     meta_og_url = "https://kkmautoshop.com"
-    meta_og_image = "https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png"
+    meta_og_image = "https://raw.githubusercontent.com/EV-Advisory/kkm_auto/master/img/slide/jeep-4640909.webp"
     meta_og_description = "Mechanic and auto services family business within the GTA"
     meta_twitter_card = "summary_large_image"
     meta_twitter_site = "@kkm.autoshop"
@@ -72,15 +72,9 @@ googleAnalytics = "G-QHZQHJVYE5"
   [[menu.footer]]
     name = "Home"
     url = "/"
+    pre = "<i class='fa-solid fa-car-side text-2x1'></i>"
       weight = 1
-
   [[menu.footer]]
-    name = "Github"
-    url = "https://github.com/opera7133/tella"
-    pre = "<i class='fa-solid fa-car-side text-2x1'></i>"
-      weight = 2
-  [[menu.footer]]
-    name = "Github"
-    url = "https://github.com/opera7133/tella"
-    pre = "<i class='fa-solid fa-car-side text-2x1'></i>"
-      weight = 3
+    name = "Services"
+    url = "/services/"
+    weight = 3
